@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  due: 2013-01-15
+  last_renewal_on: 2013-01-15
+  renewal_count: 1
+  user: 
+  book: 
+
+two:
+  due: 2013-01-15
+  last_renewal_on: 2013-01-15
+  renewal_count: 1
+  user: 
+  book: 
