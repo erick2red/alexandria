@@ -1,4 +1,6 @@
 class LoansController < ApplicationController
+  load_and_authorize_resource
+
   # GET /loans
   # GET /loans.json
   def index
