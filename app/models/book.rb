@@ -3,4 +3,7 @@ class Book < ActiveRecord::Base
 
   validates :authors, :description, :editorial, :keywords, :title, :year, :presence => true
   validates :title, :uniqueness => true
+
+  has_many :loans
+  has_many :users, :through => :loans
 end
