@@ -1,4 +1,6 @@
 Alexandria::Application.routes.draw do
+  devise_for :users
+
   resources :loans
 
 
@@ -7,7 +9,7 @@ Alexandria::Application.routes.draw do
 
   resources :books
 
-
+  root :to => "books#index"
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
