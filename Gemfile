@@ -26,6 +26,7 @@ gem 'devise'
 gem 'cancan'
 
 gem "better_errors", ">= 0.2.0", :group => :development
+gem "binding_of_caller", :group => :development
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

@@ -3,7 +3,11 @@ Alexandria::Application.routes.draw do
 
   resources :loans
   resources :users
-  resources :books
+
+  resources :books do
+    resources :comments
+  end
+
 
   root :to => "books#index"
 

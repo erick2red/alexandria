@@ -13,4 +13,6 @@ class User < ActiveRecord::Base
 
   has_many :loans
   has_many :books, :through => :loans
+
+  has_many :comments
 end

@@ -6,4 +6,6 @@ class Book < ActiveRecord::Base
 
   has_many :loans
   has_many :users, :through => :loans
+
+  has_many :comments
 end

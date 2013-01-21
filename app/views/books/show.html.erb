@@ -30,6 +30,21 @@
   <%= @book.year %>
 </p>
 
+<b>Comments</b>
+<%= render @book.comments %>
+
+<% if user_signed_in? %>
+  <b>Add a comment:</b>
+  <%= form_for([@book, @book.comments.build]) do |f| %>
+  <div class="field">
+    <%= f.label :body %><br />
+    <%= f.text_area :body %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+  <% end %>
+<% end %>
 
 <%= link_to 'Edit', edit_book_path(@book) %> |
 <%= link_to 'Back', books_path %>
